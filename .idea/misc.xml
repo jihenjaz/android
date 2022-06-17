@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Jihen Jaziri/.gradle/caches/transforms-3/492eb07966ad1c8cf4f2a58bb0bc41a0/transformed/material-1.2.0/res/layout/mtrl_calendar_month_navigation.xml" value="0.1" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.155" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/drawable/bottomnav_bg.xml" value="0.134" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/drawable/ic_bakery.xml" value="0.125" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.155" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/drawable/ic_home.xml" value="0.149" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/drawable/ic_home_background.xml" value="0.155" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.155" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/drawable/ic_map.xml" value="0.155" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/drawable/ic_profile.xml" value="0.155" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/drawable/ic_reservation.xml" value="0.155" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/drawable/rounded.xml" value="0.149" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/drawable/search_bg.xml" value="0.133" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/drawable/switch_trcks.xml" value="0.1945" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/drawable/switch_tumbs.xml" value="0.1945" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/font/fonts.xml" value="0.23076923076923078" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/layout/activity_buttom.xml" value="0.16893115942028986" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/layout/activity_home.xml" value="0.16" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/layout/activity_home_hor_adapter.xml" value="0.11979166666666667" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/layout/activity_home_model.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/layout/activity_main2.xml" value="0.16802536231884058" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/layout/activity_new.xml" value="0.1" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/layout/activity_splash.xml" value="0.16621376811594202" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/layout/activity_splash2.xml" value="0.16621376811594202" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/layout/activity_welcome.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/layout/dropdown_item.xml" value="0.18229166666666666" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/layout/fragment_blank.xml" value="0.16893115942028986" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/layout/fragment_home.xml" value="0.16802536231884058" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/layout/fragment_homee.xml" value="0.16802536231884058" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/layout/fragment_maps.xml" value="0.16802536231884058" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/layout/fragment_panier.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/layout/home_horizontal_item.xml" value="0.18636363636363637" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/layout/item_rv_main_category.xml" value="0.5" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/layout/item_rv_sub_category.xml" value="0.16621376811594202" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Jihen Jaziri/AndroidStudioProjects/FoodTApp/app/src/main/res/menu/menu.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
