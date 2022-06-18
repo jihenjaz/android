@@ -8,32 +8,25 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.foodtapp.adapter.HomeHorAdapter
-import com.example.foodtapp.models.HomeModel
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class Home : Fragment() {
     private var layoutManager: RecyclerView.LayoutManager? = null
-    private var adapter : RecyclerView.Adapter<HomeHorAdapter.ViewHolder>? = null
+    private var adapter: RecyclerView.Adapter<HomeHorAdapter.ViewHolder>? = null
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        super.onCreate (savedInstanceState)
-        var view =  inflater.inflate(R.layout.fragment_home, container, false)
-        layoutManager = LinearLayoutManager (requireContext())
-        home_hor_rec = view.findViewById()
+        super.onCreate(savedInstanceState)
+        var view = inflater.inflate(R.layout.fragment_home, container, false)
+        layoutManager = LinearLayoutManager(requireContext())
         home_hor_rec.layoutManager = layoutManager
-        val adapter= HomeHorAdapter()
+        val adapter = HomeHorAdapter()
         home_hor_rec.adapter = adapter
         return view
 
 
     }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        HomeHorModelList.add(HomeModel(R.drawable.ic_pat,name:"Patisserie"));
-    }
-
-
 }
+
+

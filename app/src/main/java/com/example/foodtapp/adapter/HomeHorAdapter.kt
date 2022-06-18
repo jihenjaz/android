@@ -1,5 +1,6 @@
 package com.example.foodtapp.adapter
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,7 +11,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.foodtapp.R
 
-class HomeHorAdapter : RecyclerView.Adapter<HomeHorAdapter.ViewHolder>() {
+
+class HomeHorAdapter  : RecyclerView.Adapter<HomeHorAdapter.ViewHolder>() {
     private var names = arrayOf("Patisserie","Restaurant","Supermarché","Marchand","Epicerie")
     private var images = intArrayOf(R.drawable.ic_pat,R.drawable.ic_res,R.drawable.ic_sup,R.drawable.ic_fg,R.drawable.ic_ep)
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeHorAdapter.ViewHolder {

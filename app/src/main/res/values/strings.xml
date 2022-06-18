@@ -7,7 +7,7 @@
     </string-array>
     <string name="Role">Role</string>
     <string name="sign_up">Sign Up</string>
-    <string name="password">password</string>
+    <string name="password">Password</string>
     <string name="email_or_user_name">Email or User Name</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="OR">OR</string>
@@ -21,4 +21,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="la_gourmandise_à_ne_pas_ratter" />
     <string name="the_more_you_stay_the_less_you_pay" />
+    <string name="sign_in" />
+    <string name="Full_Name" />
+    <string name="Sign_in">Sign in</string>
+    <string name="email_adress">Email Adress</string>
+    <string name="cool_forsa">Cool Forsa</string>
 </resources>

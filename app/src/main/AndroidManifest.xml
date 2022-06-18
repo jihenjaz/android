@@ -12,14 +12,23 @@
         android:theme="@style/Theme.FoodTApp"
         tools:node="merge">
         <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".test"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="false" />
+        <activity
             android:name=".WelcomeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".adapter.HomeHorAdapter"
-            android:exported="false" />
-        <activity
-            android:name=".models.HomeModel"
-            android:exported="false" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -49,13 +58,7 @@
             android:exported="false" />
         <activity
             android:name=".Login"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />

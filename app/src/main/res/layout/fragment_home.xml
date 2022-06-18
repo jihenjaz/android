@@ -42,7 +42,6 @@
             android:textSize="13sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/home_hor_rec"
             android:layout_width="match_parent"
