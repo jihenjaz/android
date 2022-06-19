@@ -2,11 +2,10 @@
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/grayColor"
     tools:context=".Home">
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -17,25 +16,27 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/amarante"
             android:padding="10dp"
-            android:text="Tous les achats"
-            android:textColor="@color/pinkColor"
-            android:textSize="20dp"
+            android:text="@string/Tous_les_achats"
+            android:textColor="@color/greenColor"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
+            android:importantForAutofill="no"
+            android:inputType="text"
             android:id="@+id/editText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="6dp"
             android:layout_marginTop="4dp"
             android:background="@drawable/search_bg"
-            android:drawableRight="@drawable/ic_baseline_search_24"
+            android:drawableEnd="@drawable/ic_baseline_search_24"
             android:drawablePadding="9dp"
             android:fontFamily="@font/amita"
-            android:hint="Chercher votre produit"
+            android:hint="@string/chercher_votre_produit"
             android:padding="10dp"
             android:textColor="@color/black"
             android:textColorHint="@color/hintTextColor"
@@ -43,7 +44,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/home_hor_rec"
+            tools:listitem="@layout/home_horizontal_item"
+            android:id="@+id/recyclerview"
+            tools:itemCount="5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="6dp"

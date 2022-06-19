@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">FoodTApp</string>
     <string name="log_in">Log In</string>
+    String[] items ={"Trader","User"};
     <string-array name="Role">
-        <item>Commerçant</item>
-        <item>Simple utilisateur</item>
+        <item>Trader</item>
+        <item>User</item>
     </string-array>
     <string name="Role">Role</string>
     <string name="sign_up">Sign Up</string>
@@ -26,4 +27,6 @@
     <string name="Sign_in">Sign in</string>
     <string name="email_adress">Email Adress</string>
     <string name="cool_forsa">Cool Forsa</string>
+    <string name="Tous_les_achats">all purchases</string>
+    <string name="chercher_votre_produit">Search something</string>
 </resources>

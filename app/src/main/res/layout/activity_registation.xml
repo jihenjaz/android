@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/greenColor"
-    tools:context=".RegistrationActivity">
+    tools:context=".Activities.RegistrationActivity">
 
     <TextView
 
@@ -73,6 +73,28 @@
         app:layout_constraintTop_toBottomOf="@+id/editText2"
         app:layout_constraintWidth_percent=".8" />
 
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:textColorHint="@color/white"
+        android:hint="Role"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintTop_toBottomOf="@+id/editText4">
+
+        <AutoCompleteTextView
+            android:id="@+id/Role"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/transparentColor"
+            android:inputType="none"
+            android:text="User"
+            android:textColor="@color/orange" />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <EditText
         android:layout_marginTop="10dp"
         android:textColor="@color/white"
@@ -90,7 +112,9 @@
         app:layout_constraintWidth_percent=".8" />
 
     <Button
-        android:layout_marginTop="40dp"
+
+        android:onClick="mainActivity"
+        android:layout_marginTop="150dp"
         android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

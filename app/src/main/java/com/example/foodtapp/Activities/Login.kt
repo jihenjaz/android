@@ -1,4 +1,4 @@
-package com.example.foodtapp
+package com.example.foodtapp.Activities
 
 import android.content.Intent
 import android.os.Build
@@ -9,6 +9,8 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import com.example.foodtapp.MainActivity
+import com.example.foodtapp.R
 import kotlinx.android.synthetic.main.activity_login.*
 
 @Suppress("UNREACHABLE_CODE")
@@ -55,7 +57,7 @@ class Login : AppCompatActivity() {
             logIn.setTextColor(resources.getColor(R.color.textColor,null))
         }
         signIn.setOnClickListener {
-            startActivity(Intent(this@Login,NewActivity::class.java))
+            startActivity(Intent(this@Login, MainActivity::class.java))
         }
 
     }

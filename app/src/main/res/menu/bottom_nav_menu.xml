@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@id/home4"
+    <item android:id="@id/home"
         android:title="@string/menu_home"
         android:icon="@drawable/ic_home"
         />
     <item
         android:id="@+id/mapsFragment"
         android:title="@string/menu_maps"
-        android:icon="@drawable/ic_map"
+        android:icon="@drawable/ic_home"
         />
     <item
         android:id="@+id/panier"
