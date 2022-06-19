@@ -8,26 +8,21 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.foodtapp.R
 import com.example.foodtapp.models.HomeModel
 
-class HomeHorAdapter(private val mList: List<HomeModel>) : RecyclerView.Adapter<HomeHorAdapter.ViewHolder>() {
-    private val text = arrayOf("Patisserie", "Restaurant", "Supermarché", "Marchand", "Epicerie")
-    private val image = intArrayOf(
-        R.drawable.ic_pat,
-        R.drawable.ic_res,
-        R.drawable.ic_sup,
-        R.drawable.ic_fg,
-        R.drawable.ic_ep
-    )
+class HomeHorAdapter(mList: MutableList<HomeModel>) : RecyclerView.Adapter<HomeHorAdapter.ViewHolder>() {
+    lateinit var list : MutableList<HomeModel>
+    mList = list
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.home_horizontal_item, parent, false)
-
+        list = mList
         return ViewHolder(view)
     }
 
     // binds the list items to a view
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-        val homeModel = mList[position]
+        val homeModel : HomeModel
+        homeModel=mList
 
         // sets the image to the imageview from our itemHolder class
         holder.imageView.setImageResource(homeModel.image)
@@ -43,7 +38,7 @@ class HomeHorAdapter(private val mList: List<HomeModel>) : RecyclerView.Adapter<
     }
 
     // Holds the views for adding it to image and text
-    class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
+    inner class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
         val imageView: ImageView = itemView.findViewById(R.id.imageview)
         val textView: TextView = itemView.findViewById(R.id.textView)
     }
