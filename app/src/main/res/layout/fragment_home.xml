@@ -45,11 +45,12 @@
             app:layout_constraintTop_toBottomOf="@+id/textView" />
         <androidx.recyclerview.widget.RecyclerView
             tools:listitem="@layout/home_horizontal_item"
-            android:id="@+id/recyclerview"
-            tools:itemCount="5"
+            android:id="@+id/recycler_view"
+            tools:itemCount="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="6dp"
+            android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
