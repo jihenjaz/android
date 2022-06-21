@@ -27,9 +27,12 @@
     <string name="Sign_in">Sign in</string>
     <string name="email_adress">Email Adress</string>
     <string name="cool_forsa">Cool Forsa</string>
-    <string name="Tous_les_achats">all purchases</string>
+    <string name="Tous_les_achats">All Purchases</string>
     <string name="chercher_votre_produit">Search something</string>
     <string name="rating">5.0</string>
     <string name="product_name">product Name</string>
     <string name="time">Aujourd\'hui 14:00 - 16:30</string>
+    <string name="categorie">Category</string>
+    <string name="Category">Category</string>
+    <string name="SpecialOffer">Special Offer</string>
 </resources>

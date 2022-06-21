@@ -1,62 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/grayColor"
     tools:context=".Home">
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/amarante"
+            android:fontFamily="@font/gilroy_bold"
             android:padding="10dp"
             android:text="@string/Tous_les_achats"
             android:textColor="@color/greenColor"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textSize="24sp"
+            android:textStyle="bold" />
+         <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="5dp"
+             android:layout_marginStart="10dp"
+             app:cardCornerRadius="10dp"
+             android:layout_marginEnd="10dp"
+             app:cardElevation="10dp">
 
-        <EditText
-            android:importantForAutofill="no"
-            android:inputType="text"
-            android:id="@+id/editText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="6dp"
-            android:layout_marginTop="4dp"
-            android:background="@drawable/search_bg"
-            android:drawableEnd="@drawable/ic_baseline_search_24"
-            android:drawablePadding="9dp"
-            android:fontFamily="@font/amita"
-            android:hint="@string/chercher_votre_produit"
-            android:padding="10dp"
-            android:textColor="@color/black"
-            android:textColorHint="@color/hintTextColor"
-            android:textSize="13sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
-        <androidx.recyclerview.widget.RecyclerView
-            tools:listitem="@layout/home_horizontal_item"
-            android:id="@+id/recycler_view"
-            tools:itemCount="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="6dp"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText" />
+             <SearchView
+                 android:id="@+id/search_view"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/search_bg"
+                 android:fontFamily="@font/gilroy_bold"
+                 android:iconifiedByDefault="false"
+                 android:queryHint="@string/chercher_votre_produit"
+                 android:textColor="@color/black"
+                 android:queryBackground="@color/white"
+                 android:textSize="13sp" />
+         </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_bold"
+        android:padding="5dp"
+        android:text="@string/categorie"
+        android:textColor="@color/greenColor"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.core.widget.NestedScrollView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:layout_constraintVertical_bias="1.0"
+        tools:itemCount="1"
+        tools:listitem="@layout/home_horizontal_item" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_bold"
+        android:padding="5dp"
+        android:text="@string/SpecialOffer"
+        android:textColor="@color/greenColor"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:orientation="horizontal"
+        tools:itemCount="1"
+        tools:listitem="@layout/home_vertical_item" />
+</LinearLayout>
 

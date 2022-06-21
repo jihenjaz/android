@@ -35,7 +35,7 @@ class HomeHorAdapter: RecyclerView.Adapter<HomeHorAdapter.ViewHolder>() {
     }
 
     // Holds the views for adding it to image and text
-    inner class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
+    class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
         val imageView: ImageView = itemView.findViewById(R.id.imageview)
         val textView: TextView = itemView.findViewById(R.id.textView)
     }

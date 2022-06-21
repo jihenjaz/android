@@ -1,87 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".Activities.HomeActivity"
     android:id="@+id/container"
     android:background="@color/grayColor">
-    <fragment
-        android:id="@+id/fragment_home"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="horizontal" >
-    </fragment>
-
-    <ScrollView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scrollbars="none">
-        <LinearLayout
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amarante"
+            android:padding="10dp"
+            android:text="@string/Tous_les_achats"
+            android:textColor="@color/greenColor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:id="@+id/editText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Tous les achats"
-                android:textStyle="bold"
-                android:textSize="20dp"
-                android:textColor="@color/pinkColor"
-                android:fontFamily="@font/gilroy_bold"
-                android:padding="10dp"/>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="10dp">
-                <SearchView
-                    android:id="@+id/search_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:queryHint="Chercher un produit"
-                    android:iconifiedByDefault="false"
-                    android:background="@drawable/search_bg"/>
-            </androidx.cardview.widget.CardView>
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_main_category"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                tools:itemCount="1"
-                android:orientation="horizontal"
-                tools:listitem="@layout/item_rv_main_category"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Catégories"
-                android:textStyle="bold"
-                android:textSize="15dp"
-                android:textColor="@color/pinkColor"
-                android:fontFamily="@font/gilroy_bold"
-                android:padding="10dp"/>
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_sub_category"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                tools:itemCount="1"
-                android:orientation="horizontal"
-                tools:listitem="@layout/item_rv_sub_category"/>
-        </LinearLayout>
+            android:layout_margin="6dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/search_bg"
+            android:drawableEnd="@drawable/ic_baseline_search_24"
+            android:drawablePadding="9dp"
+            android:fontFamily="@font/amita"
+            android:hint="@string/chercher_votre_produit"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hintTextColor"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <androidx.recyclerview.widget.RecyclerView
+            tools:listitem="@layout/home_horizontal_item"
+            android:id="@+id/recycler_view"
+            tools:itemCount="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
 
-    </ScrollView>
-
-
-
-
-
-</RelativeLayout>
-
-
-
-
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
