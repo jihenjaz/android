@@ -8,12 +8,15 @@ import android.view.View
 import android.view.ViewGroup
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
+import com.google.android.gms.maps.SupportMapFragment
 
 import kotlinx.android.synthetic.main.fragment_maps.*
 
 class MapsFragment : Fragment() ,OnMapReadyCallback {
 
+
         private lateinit var googleMap : GoogleMap
+
 
         override fun onCreate(savedInstanceState: Bundle?){
             super.onCreate(savedInstanceState)

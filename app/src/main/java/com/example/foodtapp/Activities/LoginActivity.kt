@@ -24,4 +24,6 @@ class LoginActivity : AppCompatActivity() {
     fun register(view: View) {
         startActivity(Intent(this@LoginActivity, RegistrationActivity::class.java))
     }
+
+    fun mainActivity(view: View) {}
 }

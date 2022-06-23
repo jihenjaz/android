@@ -35,4 +35,6 @@
     <string name="categorie">Category</string>
     <string name="Category">Category</string>
     <string name="SpecialOffer">Special Offer</string>
+    <string name="update">Update</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAfdjYErHyXDEfgvAkjYsroRLeSGmvYUh0</string>
 </resources>
