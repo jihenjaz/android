@@ -37,4 +37,5 @@
     <string name="SpecialOffer">Special Offer</string>
     <string name="update">Update</string>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAfdjYErHyXDEfgvAkjYsroRLeSGmvYUh0</string>
+    <string name="title_forgot_password">forgot_password</string>
 </resources>

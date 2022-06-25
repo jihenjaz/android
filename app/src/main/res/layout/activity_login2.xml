@@ -26,6 +26,7 @@
         app:layout_constraintVertical_bias="0.2" />
 
     <TextView
+
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,7 +43,7 @@
 
     <EditText
         android:layout_marginTop="30dp"
-        android:id="@+id/editText2"
+        android:id="@+id/et_email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#cccccc"
@@ -59,7 +60,7 @@
     <EditText
         android:layout_marginTop="10dp"
         android:textColor="@color/white"
-        android:id="@+id/editText3"
+        android:id="@+id/et_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#cccccc"
@@ -69,26 +70,44 @@
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/et_email"
         app:layout_constraintWidth_percent=".8" />
 
+    <TextView
+        android:id="@+id/fogot_password"
+        android:onClick="forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Forget Password?"
+        android:textAlignment="textEnd"
+        android:textColor="#616161"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
     <Button
-        android:onClick="mainActivity"
         android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="159dp"
+        android:layout_marginBottom="220dp"
         android:backgroundTint="#FFFFFF"
+        android:onClick="mainActivity"
         android:padding="14dp"
         android:text="@string/Sign_in"
         android:textAllCaps="false"
         android:textColor="@color/hintTextColor"
         app:cornerRadius="50dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3"
-        app:layout_constraintVertical_bias=".7"
+        app:layout_constraintTop_toBottomOf="@id/fogot_password"
+        app:layout_constraintVertical_bias="0.0"
         app:layout_constraintWidth_percent=".8" />
 
     <TextView
@@ -103,7 +122,6 @@
         app:layout_constraintHorizontal_bias=".4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
-
     <TextView
         android:onClick="register"
         android:id="@+id/textView6"

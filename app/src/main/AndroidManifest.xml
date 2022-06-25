@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.foodtapp">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,11 +14,11 @@
         android:theme="@style/Theme.FoodTApp"
         tools:node="merge">
         <activity
+            android:name=".Activities.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.HomeActivity"
-            android:exported="true" >
-
-
-    </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".Activities.LoginActivity"
             android:exported="false" />
@@ -26,8 +27,13 @@
             android:exported="false" />
         <activity
             android:name=".Activities.WelcomeActivity"
-            android:exported="false"/>
+            android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -46,22 +52,15 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
+
         <activity
             android:name=".Activities.Login"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAfdjYErHyXDEfgvAkjYsroRLeSGmvYUh0"/>
     </application>
-
 
 </manifest>
